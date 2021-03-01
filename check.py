@@ -42,7 +42,6 @@ countries_info = [
     },
 ]
 
-
 # 8. Напишите функцию create_country_info, которая принимает параметры
 #     country, population, cities и возвращает словарь
 
@@ -53,9 +52,14 @@ countries_info = [
 
 # 10. Создать репозиторий и залить туда этот файл
 
+from random import choice, randint
+
+
 def main():
-    x = pow(2, 3)
-    print(x)
+    x = pow(2, 3)  # 1
+    x += 3  # 2
+
+    num_list = [randint(1, x) for i in range(x)]  # 3
 
 
 if __name__ == '__main__':
